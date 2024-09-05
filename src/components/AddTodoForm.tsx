@@ -16,6 +16,8 @@ function AddTodoForm({ addTodo }: AddTodoFormProps) {
         addTodo(title, desc);
         setTitle('');
         setDesc('');
+
+        event.preventDefault();
     };
 
     return (

@@ -21,6 +21,7 @@ function TodoList({ todos, deleteTodo, toggleComplete, toggleUrgent }: TodoListP
                     deleteTodo={deleteTodo}
                     toggleComplete={toggleComplete}
                     toggleUrgent={toggleUrgent}
+                    key={todo.id}
                 />
             ))}
         </ul>
